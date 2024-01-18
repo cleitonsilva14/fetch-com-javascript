@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <title>Usar API CEP com fetch</title>
+</head>
+
+<body>
+
+    <div class="bg-primary p-5 text-light">
+        <div class="container">
+            <h1>Consultando CEP</h1>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <form>
+            <div class="form-group">
+                <label class="form-label" for="cep">CEP</label>
+                <input type="text" class="form-control" maxlength="9" id="cep">
+                <small class="form-text">00000-000</small>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro">
+                <small class="form-text">Rua.</small>
+            </div>
+
+            <div class="form-group">
+
+                <label class="form-label" for="bairro">Bairro</label>
+
+                <input type="text" class="form-control" id="bairro">
+                <small class="form-text">Bairro</small>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="localidade">Localidade</label>
+                <input type="text" class="form-control" id="localidade">
+                <small class="form-text">Cidade</small>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="uf">UF</label>
+                <input type="text" class="form-control" id="uf">
+                <small class="form-text">Estado</small>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="retorno" class="form-label">Retorno</label>
+                <textarea class="form-control" id="retorno" rows="12" readonly style="resize: none;"></textarea>
+                <small class="form-text">Retorno da API em JSON</small>
+            </div>
+
+            <div class="form-group mb-3">
+                <button class="btn btn-danger" type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="src/js/main.js"></script>
+
+</body>
+
+</html>
